@@ -1,5 +1,4 @@
 import Vue from "vue"
-
-var vm = new Vue({
-    el: "#app"
-})
+import "bootstrap";
+import "jquery";
+import "popper.js";
