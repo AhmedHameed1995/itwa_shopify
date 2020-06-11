@@ -66,6 +66,7 @@
             <div class="col-md-9">
                 <div class="row">
                     {% for product in collection.products %}
+                        {{ product | json }}
                       <div class="col-md-4">
                         <div class="product-item">
 
