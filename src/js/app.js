@@ -14,5 +14,6 @@ window.Noty = require('noty');
 
 require('./components/ProductForm.js');
 require('./components/CartForm.js');
+require('./components/MiniCart.js');
 require('./product.js'); 
 require('./header.js'); 
