@@ -12,6 +12,8 @@ import "bootstrap";
 
 window.Noty = require('noty');
 
+// Vue custom filter
+require('./filters/money.js');
 require('./components/ProductForm.js');
 require('./components/CartForm.js');
 require('./components/MiniCart.js');

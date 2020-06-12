@@ -23,7 +23,6 @@ if (document.querySelector('.mini-cart')) {
         },
 
         methods:{
-
             // Remove item from cart
             remove(item){
                 let found = this.cart.items.find(product => product.variant_id == item.variant_id);
@@ -102,10 +101,6 @@ if (document.querySelector('.mini-cart')) {
 
                             }
                         }
-                        
-                        
-                       
-
                     })
                     .catch(function (error) {
 
@@ -117,18 +112,7 @@ if (document.querySelector('.mini-cart')) {
                             text: 'There was something wrong!!'
                         }).show();
                     });
-               
-
             }
-
-         
-
-        },
-
-       
-    });
-
-
-
-    
+        },       
+    });    
 }

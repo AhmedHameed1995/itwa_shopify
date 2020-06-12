@@ -42360,7 +42360,9 @@ var jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquer
 window.jQuery = window.$ = jQuery;
 
 
-window.Noty = __webpack_require__(/*! noty */ "./node_modules/noty/lib/noty.js");
+window.Noty = __webpack_require__(/*! noty */ "./node_modules/noty/lib/noty.js"); // Vue custom filter
+
+__webpack_require__(/*! ./filters/money.js */ "./src/js/filters/money.js");
 
 __webpack_require__(/*! ./components/ProductForm.js */ "./src/js/components/ProductForm.js");
 
@@ -42658,6 +42660,21 @@ if (document.querySelector('.shopify-product-form')) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./src/js/filters/money.js":
+/*!*********************************!*\
+  !*** ./src/js/filters/money.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+Vue.filter('money', function (value) {
+  var sign = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'Rs';
+  if (!value) return 0;
+  return sign + (value / 100).toFixed(2);
+});
 
 /***/ }),
 
